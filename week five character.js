@@ -1,3 +1,8 @@
+/**
+** Kevin's comments:  Nice!  Good to see this parametric!  
+It looks like the eyeSize gets a little funky if you double the size to 80.  See if you can do this without curves, but instead using arc.
+
+**/
 var eyeCenterX = 275;
 var eyeCenterY = 275;
 var eyeSize = 40;
@@ -11,6 +16,7 @@ function setup() {
 function catEye(){
   var irisColor = random(255);
   strokeWeight(1);
+  //why noLoop here?
   noLoop();
   stroke(0);
   fill(255);
