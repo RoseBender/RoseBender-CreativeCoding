@@ -1,3 +1,7 @@
+/**
+* Kevin's comments inline...
+**/
+
 var from, to;
 
 function setup(){
@@ -7,11 +11,14 @@ function draw() {
   
   from = color(200,80,105);
   to = color(80,200,175);
+  //watch this variable.  you seem to be resetting the lerpAmt to 0 every loop and then incrementing it to 1
+  //on line 18
   var lerpAmt = 0;
   
   colorMode(RGB); 
   lerpAmt++;
   lerpAmt%=100;
+  //lerpAmt never really moves because you set it back to 0 on each draw call
   var strokeColor = lerpColor(from, to, lerpAmt);
   
   background(200,175,80);
