@@ -1,4 +1,7 @@
-
+/**
+** Kevin's comments:  Off to a good start here, but why not use variables for color?  Hard coded numbers make it extremely 
+difficult to tweak and design.  
+**/
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -23,6 +26,7 @@ function draw() {
 
 function mousePressed(){
   noStroke();
+  //move these two calls into your setup function.
   colorMode(HSB);
   ellipseMode(CENTER);
   for(var i=0; i < width; i+=30){
